@@ -7,31 +7,126 @@
   </head>
   <body>
     <div id="wrapper">
+      <!-- banner and main title -->
       <header class="welcome_banner">
-        <img src="images/front.jpg" alt="Welcome banner" width="1920" height="1080">
+        <!-- <img src="images/front.jpg" alt="Welcome banner" width="1920" height="1080" /> -->
       </header>
 
-      <section id="CV">
-        <h1>Expériences professionnelles</h1>
-        <h1>Parcours académique</h1>
-      </section>
+      <!-- main page -->
+      <main>
+        <!-- foreword == hort introduction -->
+        <section id="About_me">
+          <h1>A propos</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+            imperdiet nunc est, sollicitudin ultricies nisl aliquam quis. In eu
+            urna vehicula, cursus nisi nec, euismod purus. Quisque vehicula
+            lacinia tellus, vel varius arcu posuere sit amet. Vivamus urna enim,
+            venenatis non eros sed, fermentum feugiat mauris. Nulla libero metus,
+            tempus vitae quam eget, vulputate sodales orci. Duis nulla neque,
+            tincidunt vel mollis in, efficitur sed massa. Quisque a vehicula
+            nunc. Sed tincidunt, ante sit amet imperdiet maximus, elit libero
+            finibus augue, non viverra velit ligula id ante. Aliquam elementum,
+            nulla vel sagittis scelerisque, mauris leo ornare enim, vitae faucibus
+            tortor ipsum at metus. Donec rutrum vulputate porta. Sed a metus
+            suscipit, viverra turpis ut, pulvinar nunc. Nullam dignissim lorem
+            at mauris lobortis varius.
+          </p>
+        </section>
 
-      <section id="skills">
-        <h1>Compétences</h1>
-      </section>
+        <!-- CV : chronological order-->
+        <section id="CV">
+          <!-- education -->
+          <h1>Parcours académique</h1>
+          <div class="academic_text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              imperdiet nunc est, sollicitudin ultricies nisl aliquam quis. In eu
+              urna vehicula, cursus nisi nec, euismod purus. Quisque vehicula
+              lacinia tellus, vel varius arcu posuere sit amet. Vivamus urna enim,
+              venenatis non eros sed, fermentum feugiat mauris. Nulla libero metus,
+              tempus vitae quam eget, vulputate sodales orci. Duis nulla neque,
+              tincidunt vel mollis in, efficitur sed massa. Quisque a vehicula
+              nunc. Sed tincidunt, ante sit amet imperdiet maximus, elit libero
+              finibus augue, non viverra velit ligula id ante. Aliquam elementum,
+              nulla vel sagittis scelerisque, mauris leo ornare enim, vitae faucibus
+              tortor ipsum at metus. Donec rutrum vulputate porta. Sed a metus
+              suscipit, viverra turpis ut, pulvinar nunc. Nullam dignissim lorem
+              at mauris lobortis varius.
+            </p>
+          </div>
+          <div class="academic_text">
+            <p>
+              Vestibulum gravida dapibus ligula, eu imperdiet velit imperdiet
+              eget. Donec volutpat urna id gravida sodales. Vestibulum varius
+              justo mi, ut placerat tortor tristique eget. Vestibulum lacinia
+              dui lacus, id aliquam sem egestas sed. Vestibulum in facilisis
+              neque. Nunc posuere efficitur tristique. Vestibulum vitae efficitur
+              neque, nec tempus justo. Phasellus lacinia congue mollis.
+              Pellentesque ut urna enim. Donec in faucibus nisi. Cras fermentum
+              fermentum lorem, sit amet blandit arcu dapibus at. Nam et dolor
+              nulla. Sed at quam imperdiet, suscipit risus at, faucibus odio.
+              Duis nisi erat, luctus a risus quis, accumsan cursus metus.
+              Vestibulum cursus, est ac suscipit venenatis, nunc nisl sodales
+              sapien, eget porta odio enim id lectus.
+            </p>
+          </div>
+          <!-- professionnal -->
+          <h1>Expériences professionnelles</h1>
+          <div class="professional_exp">
+            <p>
+              Maecenas a blandit tortor, vel molestie mauris. Proin sapien
+              sapien, commodo ut fringilla at, pretium placerat felis.
+              Praesent sed dolor in dui imperdiet faucibus. Nullam mattis ac
+              sapien vel scelerisque. Aenean mattis quis leo id consectetur.
+              Nulla ultricies eros sed risus interdum, ut finibus mauris interdum.
+              Nullam maximus a arcu et mollis. Aenean sed neque ipsum.
+              Pellentesque sollicitudin risus ut tempus rhoncus. Donec
+              condimentum vel lacus ut commodo. Donec vitae tempus nisl.
+              Donec sed molestie risus, at consectetur sem. Nam arcu ligula,
+              consectetur ac pulvinar euismod, blandit vitae dolor. Duis dapibus
+              tristique ante ac condimentum.
+            </p>
+          </div>
+        </section>
 
-      <section id="Projects">
-        <h1>Projets</h1>
-      </section>
+        <!-- skills == displyed like a table -->
+        <section id="skills">
+          <h1>Compétences</h1>
+          <!-- #1 -->
+          <div id="skill_tree">
+            <div id="skill_1">
+              <h2>Skill 1</h2>
+              <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+              </ul>
+            </div>
+            <!-- #2 -->
+            <div id="skill_2">
+              <h2>Skill 1</h2>
+              <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
-      <section id="social_media">
-        <h1>Réseaux sociaux</h1>
-      </section>
+        <!-- projects == use links to other pages -->
+        <section id="Projects">
+          <h1>Projets</h1>
+        </section>
+      </main>
 
+      <!-- footer section -->
       <footer id="contact">
         <h1>Contact</h1>
         <form id="mail_contact" action="index.html" method="post">
-          <p>Name</p>
+          <label for="name_contact">Nom</label>
+          <input type="text" name="name_contact" value="Nom" />
         </form>
       </footer>
     </div>
